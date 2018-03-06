@@ -10,7 +10,7 @@ DVBSKYPROVIDER = "kernel"
 
 MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS = "\
     kernel-module-cdfs \
-    ${@bb.utils.contains('MACHINE_FEATURES', 'v3d', 'v3d-libgles-${MACHINE}', '',d)} \
+    ${@bb.utils.contains('MACHINE_FEATURES', 'v3d', 'v3d-libgles-dags7252', '',d)} \
     "
 
 MACHINE_EXTRA_RRECOMMENDS += " \
