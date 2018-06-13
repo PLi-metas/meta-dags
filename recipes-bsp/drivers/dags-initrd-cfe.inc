@@ -10,11 +10,12 @@ require conf/license/license-gplv2.inc
 ALLOW_EMPTY_${PN} = "1"
 
 DOWNLOADNAME ?= "${MACHINE}"
+CHIPNAME ?= "7439b0"
 
 inherit deploy
 do_deploy() {
-    if [ -e vmlinuz-initrd-7439b0  ]; then
-    install -m 0644 vmlinuz-initrd-7439b0  ${DEPLOYDIR}/${MACHINE}_initrd_run.bin
+    if [ -e vmlinuz-initrd-${CHIPNAME}  ]; then
+    install -m 0644 vmlinuz-initrd-${CHIPNAME}  ${DEPLOYDIR}/${MACHINE}_initrd_run.bin
     fi
 }
 
