@@ -2,6 +2,8 @@ DESCRIPTION = "Linux kernel for ${MACHINE}"
 LICENSE = "GPLv2"
 SECTION = "kernel"
 
+PACKAGE_ARCH = "${MACHINE_ARCH}"
+
 KV = "4.1.20"
 DATETIME = "20180321"
 
