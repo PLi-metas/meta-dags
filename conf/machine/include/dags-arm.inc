@@ -30,6 +30,6 @@ IMAGE_CMD_tar_prepend = "\
     rm -Rf update; \
 "
 
-EXTRA_IMAGEDEPENDS = "\
+EXTRA_IMAGEDEPENDS += "\
     dags-initrd-cfe-${MACHINE} \
     "

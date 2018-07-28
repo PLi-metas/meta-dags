@@ -8,11 +8,11 @@ BOOTLOGO_FILENAME = "splash.bmp"
 DVBPROVIDER = "kernel"
 DVBSKYPROVIDER = "kernel"
 
-MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS = "\
+MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS += "\
     kernel-module-cdfs \
     "
 
-MACHINE_EXTRA_RRECOMMENDS += " \
+MACHINE_EXTRA_RRECOMMENDS += "\
     gstreamer1.0-plugin-dvbmediasink \
     gstreamer1.0-libav \
     "
