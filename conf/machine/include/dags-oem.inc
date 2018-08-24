@@ -1,7 +1,7 @@
 # We know about rtc
 include conf/machine/include/build-extras.inc
 
-MACHINE_FEATURES += "3dtv alsa hdmicec switchoff textlcd ci skins1080 dags"
+MACHINE_FEATURES += "3dtv alsa hdmicec switchoff textlcd ci dags"
 
 BOOTLOGO_FILENAME = "splash.bmp"
 
