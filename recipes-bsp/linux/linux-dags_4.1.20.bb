@@ -4,6 +4,8 @@ SECTION = "kernel"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
+COMPATIBLE_MACHINE = "force4"
+
 KV = "4.1.20"
 DATETIME = "20180321"
 

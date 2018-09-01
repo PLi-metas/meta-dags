@@ -6,6 +6,8 @@ require conf/license/license-close.inc
 
 PACKAGE_ARCH = "${MACHINE}"
 
+COMPATIBLE_MACHINE = "force2plushv"
+
 SRCDATE = "20180808"
 KV = "4.2.1"
 PV = "${KV}+${SRCDATE}"

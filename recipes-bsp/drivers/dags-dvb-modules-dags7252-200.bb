@@ -6,6 +6,8 @@ require conf/license/license-close.inc
 
 PACKAGE_ARCH = "${MACHINE}"
 
+COMPATIBLE_MACHINE = "force3uhd|tmtwin4k"
+
 SRCDATE = "20180829"
 KV = "3.14.28"
 PV = "${KV}+${SRCDATE}"

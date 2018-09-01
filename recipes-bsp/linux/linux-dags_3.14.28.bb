@@ -4,6 +4,8 @@ SECTION = "kernel"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
+COMPATIBLE_MACHINE = "force3uhd|force3uhdplus|tm4ksuper|tmtwin4k"
+
 KV = "3.14.28"
 
 inherit kernel machine_kernel_pr

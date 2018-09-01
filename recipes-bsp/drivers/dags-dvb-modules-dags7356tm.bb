@@ -6,6 +6,8 @@ require conf/license/license-close.inc
 
 PACKAGE_ARCH = "${MACHINE}"
 
+COMPATIBLE_MACHINE = "tmnano3t|tmnano2super"
+
 SRCDATE = "20170524"
 KV = "3.9.7"
 PV = "${KV}+${SRCDATE}"

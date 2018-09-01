@@ -4,6 +4,8 @@ SECTION = "kernel"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
+COMPATIBLE_MACHINE = "force2|force2nano|force2plus|force2plushv|force2se|megaforce2|optimussos|valalinux|tmnanom3|tmnanoseplus|tmnanosem2plus|tmnanosem2|tmnanosecombo|tmnanose"
+
 SRCDATE = "20151022"
 
 inherit kernel machine_kernel_pr

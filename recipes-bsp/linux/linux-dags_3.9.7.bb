@@ -4,6 +4,8 @@ SECTION = "kernel"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
+COMPATIBLE_MACHINE = "force1|force1plus|iqonios100hd|iqonios200hd|iqonios300hd|iqonios300hdv2|mediaart200hd|mediabox|megaforce1plus|optimussos1|optimussos1plus|optimussos2|optimussos2plus|optimussos3plus|roxxs200hd|worldvisionf1|worldvisionf1plus|tm2t|tmnano|tmnano2super|tmnano2t|tmnano3t|tmtwin|tmsingle"
+
 KV = "3.9.7-r2"
 
 inherit kernel machine_kernel_pr

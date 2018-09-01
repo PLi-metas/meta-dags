@@ -6,6 +6,8 @@ require conf/license/license-close.inc
 
 PACKAGE_ARCH = "${MACHINE}"
 
+COMPATIBLE_MACHINE = "worldvisionf1|worldvisionf1plus"
+
 SRCDATE = "20171201"
 KV = "3.9.7"
 PV = "${KV}+${SRCDATE}"

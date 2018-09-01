@@ -6,6 +6,8 @@ require conf/license/license-close.inc
 
 PACKAGE_ARCH = "${MACHINE}"
 
+COMPATIBLE_MACHINE = "iqonios100hd|iqonios300hd|iqonios300hdv2|mediabox|optimussos1|tmnano2t|tmnano|tm2t|tmtwin|tmsingle"
+
 SRCDATE = "20170524"
 KV = "3.9.7"
 PV = "${KV}+${SRCDATE}"

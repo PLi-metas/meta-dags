@@ -6,6 +6,8 @@ require conf/license/license-close.inc
 
 PACKAGE_ARCH = "${MACHINE}"
 
+COMPATIBLE_MACHINE = "force1|force1plus|megaforce1plus|optimussos2plus|optimussos3plus|optimussos1plus"
+
 SRCDATE = "20170524"
 KV = "3.9.7"
 PV = "${KV}+${SRCDATE}"
