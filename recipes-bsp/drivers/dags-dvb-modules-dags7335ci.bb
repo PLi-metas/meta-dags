@@ -6,7 +6,7 @@ require conf/license/license-close.inc
 
 PACKAGE_ARCH = "${MACHINE}"
 
-COMPATIBLE_MACHINE = "iqonios200hd|mediaart200hd|optimussos2|roxxs200hd"
+COMPATIBLE_MACHINE = "iqonios200hd|optimussos2"
 
 SRCDATE = "20170524"
 KV = "3.9.7"
