@@ -11,6 +11,8 @@ DATETIME = "20180321"
 
 inherit kernel machine_kernel_pr
 
+MACHINE_KERNEL_PR_append = ".1"
+
 SRC_URI[md5sum] = "710b7af46d7ac1c78e3ef683c5c0a6ad"
 SRC_URI[sha256sum] = "1bb6b4f0d559885b3bd5f18c66a50a8ff39a284a81ad4da16188d08b9461ec55"
 
