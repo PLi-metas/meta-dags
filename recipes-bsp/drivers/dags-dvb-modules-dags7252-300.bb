@@ -2,11 +2,11 @@ require dags-dvb-modules.inc
 
 COMPATIBLE_MACHINE = "force3uhdplus|tm4ksuper"
 
-SRCDATE = "20190116"
+SRCDATE = "20190319"
 KV = "3.14.28"
 
-SRC_URI[md5sum] = "e066e8181db209cc2e3b87fb8944d5ed"
-SRC_URI[sha256sum] = "d6d1036908bb922f70fc7158499ff07463671b033e9b05ac6aeb7bff4dfa5bc2"
+SRC_URI[md5sum] = "07403873f7e88b7d26d5f39a7b60a5aa"
+SRC_URI[sha256sum] = "8e5e664fd63d6944aa72a1491fffc77a4983cd20325ebaa74c088c763058d846"
 
 SRC_URI = "http://en3homeftp.net/release/images/oedrivers/bcmlinuxdvb_7252S-300mm-${KV}-${SRCDATE}.tar.gz"
 
