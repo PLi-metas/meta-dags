@@ -4,7 +4,7 @@ SECTION = "kernel"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-COMPATIBLE_MACHINE = "force2|force2nano|force2plus|force2plushv|force2se|optimussos|valalinux|tmnanom3|tmnanoseplus|tmnanosem2|tmnanosecombo|tmnanose|lunix"
+COMPATIBLE_MACHINE = "force2|force2nano|force2plus|force2plushv|force2se|optimussos|valalinux|tmnanom3|tmnanoseplus|tmnanosem2|tmnanosecombo|tmnanose|lunix|fusionhd|fusionhdse|purehd|purehdse"
 
 SRCDATE = "20151022"
 
