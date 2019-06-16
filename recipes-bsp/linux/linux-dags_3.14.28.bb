@@ -4,7 +4,7 @@ SECTION = "kernel"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-COMPATIBLE_MACHINE = "force3uhd|force3uhdplus|tm4ksuper|tmtwin4k"
+COMPATIBLE_MACHINE = "force3uhd|force3uhdplus|tm4ksuper|tmtwin4k|lunix3-4k"
 
 KV = "3.14.28"
 

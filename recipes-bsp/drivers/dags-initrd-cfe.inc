@@ -9,7 +9,6 @@ require conf/license/license-gplv2.inc
 
 ALLOW_EMPTY_${PN} = "1"
 
-DOWNLOADNAME ?= "${MACHINE}"
 CHIPNAME ?= "7439b0"
 
 inherit deploy
@@ -19,7 +18,7 @@ do_deploy() {
     fi
 }
 
-SRC_URI = "http://en3homeftp.net/pub/down/vmlinuz-initrd_${DOWNLOADNAME}_${SRCDATE}.tar.gz"
+SRC_URI = "http://en3homeftp.net/pub/down/vmlinuz-initrd_${MACHINE}_${SRCDATE}.tar.gz"
 
 S = "${WORKDIR}"
 
