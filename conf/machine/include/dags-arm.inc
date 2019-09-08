@@ -4,6 +4,7 @@ DISTRO_FEATURES_remove = "directfb gtk-directfb"
 
 KERNEL_FILE = "oe_kernel.bin"
 ROOTFS_FILE = "rootfs.tar.bz2"
+MTD_BLACK  = "mmcblk0"
 
 TARGET_ARCH = "arm"
 DEFAULTTUNE = "cortexa15hf-neon-vfpv4"
