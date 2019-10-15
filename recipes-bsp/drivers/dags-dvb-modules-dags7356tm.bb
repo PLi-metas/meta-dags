@@ -1,6 +1,6 @@
 require dags-dvb-modules.inc
 
-COMPATIBLE_MACHINE = "tmnano3t|tmnano2super"
+COMPATIBLE_MACHINE = "^(tmnano3t|tmnano2super)$"
 
 SRCDATE = "20170524"
 KV = "3.9.7"

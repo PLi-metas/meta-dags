@@ -1,6 +1,6 @@
 require edision-tuner-edicombo.inc
 
-COMPATIBLE_MACHINE = "force1|force1plus|optimussos2plus|optimussos3plus|optimussos1plus"
+COMPATIBLE_MACHINE = "^(force1|force1plus|optimussos2plus|optimussos3plus|optimussos1plus)$"
 
 KV = "3.9.7-R2"
 

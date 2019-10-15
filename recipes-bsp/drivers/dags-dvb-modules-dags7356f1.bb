@@ -1,6 +1,6 @@
 require dags-dvb-modules.inc
 
-COMPATIBLE_MACHINE = "worldvisionf1|worldvisionf1plus"
+COMPATIBLE_MACHINE = "^(worldvisionf1|worldvisionf1plus)$"
 
 SRCDATE = "20171201"
 KV = "3.9.7"

@@ -1,6 +1,6 @@
 require dags-dvb-modules.inc
 
-COMPATIBLE_MACHINE = "force3uhd|tmtwin4k|revo4k"
+COMPATIBLE_MACHINE = "^(force3uhd|tmtwin4k|revo4k)$"
 
 SRCDATE = "20190424"
 KV = "3.14.28"

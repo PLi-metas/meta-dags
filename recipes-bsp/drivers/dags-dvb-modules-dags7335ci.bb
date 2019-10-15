@@ -1,6 +1,6 @@
 require dags-dvb-modules.inc
 
-COMPATIBLE_MACHINE = "iqonios200hd|optimussos2"
+COMPATIBLE_MACHINE = "^(iqonios200hd|optimussos2)$"
 
 SRCDATE = "20170524"
 KV = "3.9.7"

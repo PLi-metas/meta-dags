@@ -1,6 +1,6 @@
 require dags-dvb-modules.inc
 
-COMPATIBLE_MACHINE = "force2|force2nano|force2plus|force2se|optimussos|valalinux|tmnanom3|tmnanoseplus|tmnanosem2|tmnanosecombo|tmnanose|fusionhd|fusionhdse|purehd"
+COMPATIBLE_MACHINE = "^(force2|force2nano|force2plus|force2se|optimussos|valalinux|tmnanom3|tmnanoseplus|tmnanosem2|tmnanosecombo|tmnanose|fusionhd|fusionhdse|purehd)$"
 
 SRCDATE = "20180808"
 KV = "4.2.1"

@@ -4,7 +4,7 @@ SECTION = "kernel"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-COMPATIBLE_MACHINE = "force4|lunix4k"
+COMPATIBLE_MACHINE = "^(force4|lunix4k)$"
 
 KV = "4.1.20"
 DATETIME = "20180321"

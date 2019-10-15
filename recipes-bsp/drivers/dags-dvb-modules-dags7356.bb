@@ -1,6 +1,6 @@
 require dags-dvb-modules.inc
 
-COMPATIBLE_MACHINE = "force1|force1plus|optimussos2plus|optimussos3plus|optimussos1plus"
+COMPATIBLE_MACHINE = "^(force1|force1plus|optimussos2plus|optimussos3plus|optimussos1plus)$"
 
 SRCDATE = "20170524"
 KV = "3.9.7"
