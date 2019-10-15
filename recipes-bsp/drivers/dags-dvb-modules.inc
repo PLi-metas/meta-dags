@@ -5,6 +5,7 @@ LICENSE = "CLOSED"
 require conf/license/license-close.inc
 
 PACKAGE_ARCH = "${MACHINE}"
+PACKAGE_ARCH_lunix3-4k = "lunix3_4k"
 
 PV = "${KV}+${SRCDATE}"
 
