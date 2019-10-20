@@ -4,7 +4,6 @@ PRIORITY = "required"
 MAINTAINER = "DAGS"
 LICENSE = "proprietary"
 PACKAGE_ARCH := "${MACHINE}"
-PACKAGE_ARCH_lunix3-4k = "lunix3_4k"
 
 require conf/license/license-gplv2.inc
 
