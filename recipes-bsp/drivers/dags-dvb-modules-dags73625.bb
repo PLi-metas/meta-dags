@@ -1,6 +1,6 @@
 require dags-dvb-modules.inc
 
-COMPATIBLE_MACHINE = "^(force2plushv|lunix|purehdse)$"
+COMPATIBLE_MACHINE = "^(force2plushv|lunix|purehdse|lunixco)$"
 
 SRCDATE = "20181025"
 KV = "4.2.1"
