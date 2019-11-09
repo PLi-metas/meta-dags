@@ -36,3 +36,5 @@ pkg_prerm_${PN}() {
 #!/bin/sh
 exit 0
 }
+
+COMPATIBLE_MACHINE = "^(force1|force1plus|iqonios100hd|iqonios200hd|iqonios300hd|iqonios300hdv2|mediabox|optimussos1|optimussos1plus|optimussos2|optimussos2plus|optimussos3plus|worldvisionf1|worldvisionf1plus|tm2t|tmnano|tmnano2super|tmnano2t|tmnano3t|tmtwin|tmsingle|force3uhd|force3uhdplus|tm4ksuper|tmtwin4k|lunix34k|galaxy4k|revo4k|force4|lunix4k|force2|force2nano|force2plus|force2plushv|force2se|optimussos|valalinux|tmnanom3|tmnanoseplus|tmnanosem2|tmnanosecombo|tmnanose|lunix|fusionhd|fusionhdse|purehd|purehdse|lunixco)$"
