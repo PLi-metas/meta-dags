@@ -9,6 +9,9 @@ BOOTLOGO_FILENAME = "splash.bmp"
 
 DVBPROVIDER = "kernel"
 DVBSKYPROVIDER = "kernel"
+MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
+    dags-shutdown \
+    "
 
 MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS += "\
     kernel-module-cdfs \
