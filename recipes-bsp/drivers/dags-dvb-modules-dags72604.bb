@@ -10,12 +10,13 @@ SRC_URI[sha256sum] = "3c2d2c74c268134ee41e27c787e44b169441a9a658a58752a69273b22f
 
 SRC_URI = "http://en3homeftp.net/release/images/oedrivers/bcmlinuxdvb_72604-${KV}-${SRCDATE}.tar.gz"
 
-do_populate_sysroot() {
-}
-
 do_install() {
-    install -d ${D}/lib/modules/${KV}/extra
-    cp -Rf ${WORKDIR}/lib/modules/${KV}/extra/*.ko ${D}/lib/modules/${KV}/extra/
+		install -d ${D}/lib/modules/${KV}/extra
+		for f in ${S}/lib/modules/${KV}/extra/*.ko; do
+			install -m 0644 $f ${D}/lib/modules/${KV}/extra;
+		done
+		install -d ${D}/${sysconfdir}/modules-load.d
+		for i in `ls ${D}/lib/modules/${KV}/extra | grep \\.ko | sed -e 's/.ko//g'`; do
+		    echo $i >> ${D}/${sysconfdir}/modules-load.d/_${MACHINE}.conf
+		done
 }
-
-FILES_${PN} += "/lib/modules/${KV}/extra"
