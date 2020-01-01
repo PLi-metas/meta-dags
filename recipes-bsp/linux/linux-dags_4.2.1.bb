@@ -18,15 +18,15 @@ LIC_FILES_CHKSUM = "file://${WORKDIR}/linux-${PV}/COPYING;md5=d7810fab7487fb0aad
 SRC_URI += "http://en3homeftp.net/pub/src/dags-linux-${PV}-${SRCDATE}.tar.gz \
 	file://defconfig \
 	file://0002-add-brcm-chips.patch \
-	file://kernel-add-support-for-gcc6.patch \
 	file://0001-Support-TBS-USB-drivers-for-4.2-kernel.patch \
 	file://0001-TBS-fixes-for-4.2-kernel.patch \
 	file://0001-STV-Add-PLS-support.patch \
 	file://0001-STV-Add-SNR-Signal-report-parameters.patch \
 	file://blindscan2.patch \
 	file://0001-stv090x-optimized-TS-sync-control.patch \
+	file://0003-log2-give-up-on-gcc-constant-optimizations.patch \
+	file://0004-cp1emu-do-not-use-bools-for-arithmetic.patch \
 	file://dvbskyt330_si2168_demod.patch \
-	file://0002-log2-give-up-on-gcc-constant-optimizations.patch \
 	"
 
 S = "${WORKDIR}/linux-${PV}"

@@ -26,13 +26,14 @@ SRC_URI = "http://en3homeftp.net/pub/src/linux-${KV}-${SRCDATE}.tar.gz \
 	file://rtl8712-fix-warnings.patch \
 	file://rtl8187se-fix-warnings.patch \
 	file://sit2_op.o \
-	file://kernel-add-support-for-gcc6.patch \
 	file://0001-Support-TBS-USB-drivers-3.9.patch \
 	file://0001-STV-Add-PLS-support.patch \
 	file://0001-STV-Add-SNR-Signal-report-parameters.patch \
 	file://0001-stv090x-optimized-TS-sync-control.patch \
 	file://blindscan2.patch \
 	file://genksyms_fix_typeof_handling.patch \
+	file://0002-log2-give-up-on-gcc-constant-optimizations.patch \
+	file://0003-cp1emu-do-not-use-bools-for-arithmetic.patch \
 	"
 
 S = "${WORKDIR}/linux-${KV}"
