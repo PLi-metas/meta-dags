@@ -33,7 +33,6 @@ SRC_URI += "http://en3homeftp.net/pub/src/linux-3.14.28.tar.xz \
 	file://CONFIG_DVB_SP2.patch \
 	file://dvbsky.patch \
 	file://rtl2832u-2.patch \
-	file://0003-mips-kernel-ilog2-gcc7.patch \
 	file://0003-3.x-uaccess-dont-mark-register-as-const.patch \
 	"
 
@@ -47,7 +46,7 @@ KERNEL_IMAGEDEST = "tmp"
 KERNEL_OUTPUT = "arch/${ARCH}/boot/${KERNEL_IMAGETYPE}"
 
 
-FILES_kernel-image = "/${KERNEL_IMAGEDEST}/zImage"
+FILES_${KERNEL_PACKAGE_NAME}-image = "/${KERNEL_IMAGEDEST}/zImage"
 
 kernel_do_install_append() {
         install -d ${D}/${KERNEL_IMAGEDEST}
