@@ -62,7 +62,7 @@ pkg_postinst_kernel-image () {
         true
 }
 
-pkg_postrm_kernel-image () {
+pkg_postrm_${KERNEL_PACKAGE_NAME}-image () {
 }
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/linux-dags-${KV}:"
