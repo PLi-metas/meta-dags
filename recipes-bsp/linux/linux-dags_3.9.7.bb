@@ -19,6 +19,7 @@ LIC_FILES_CHKSUM = "file://${WORKDIR}/linux-${KV}/COPYING;md5=d7810fab7487fb0aad
 
 SRC_URI = "http://en3homeftp.net/pub/src/linux-${KV}-${SRCDATE}.tar.gz \
 	file://defconfig \
+	file://${OPENVISION_BASE}/meta-openvision/recipes-linux/kernel-patches/kernel-add-support-for-gcc9.patch \
 	file://dmx_demux.patch \
 	file://fix_fuse_for_linux_mips_3-9.patch \
 	file://rt2800usb_fix_warn_tx_status_timeout_to_dbg.patch \
