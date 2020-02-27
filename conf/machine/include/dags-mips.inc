@@ -1,4 +1,4 @@
-include conf/machine/include/dags-oem.inc
+require conf/machine/include/dags-oem.inc
 
 KERNEL_FILE = "oe_kernel.bin"
 ROOTFS_FILE = "oe_rootfs.bin"

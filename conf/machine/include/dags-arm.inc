@@ -1,4 +1,4 @@
-include conf/machine/include/dags-oem.inc
+require conf/machine/include/dags-oem.inc
 
 DISTRO_FEATURES_remove = "directfb gtk-directfb"
 
