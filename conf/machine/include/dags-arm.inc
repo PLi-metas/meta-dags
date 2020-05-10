@@ -8,7 +8,7 @@ MTD_BLACK  = "mmcblk0"
 
 TARGET_ARCH = "arm"
 DEFAULTTUNE = "cortexa15hf-neon-vfpv4"
-IMAGE_FSTYPES =+ "tar.bz2"
+IMAGE_FSTYPES += "tar.bz2"
 
 require conf/machine/include/tune-cortexa15.inc
 
