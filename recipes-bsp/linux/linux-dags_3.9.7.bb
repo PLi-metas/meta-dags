@@ -8,7 +8,7 @@ COMPATIBLE_MACHINE = "^(force1|force1plus|iqonios100hd|iqonios200hd|iqonios300hd
 
 KV = "3.9.7-r2"
 
-inherit kernel machine_kernel_pr
+inherit kernel machine_kernel_pr samba_change_dialect
 
 SRCDATE = "20141120"
 

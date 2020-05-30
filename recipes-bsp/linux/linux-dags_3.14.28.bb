@@ -8,7 +8,7 @@ COMPATIBLE_MACHINE = "^(force3uhd|force3uhdplus|tm4ksuper|tmtwin4k|lunix34k|gala
 
 KV = "3.14.28"
 
-inherit kernel machine_kernel_pr
+inherit kernel machine_kernel_pr samba_change_dialect
 
 SRC_URI[md5sum] = "3b6d3fd2257b61789eebdebac5c597b2"
 SRC_URI[sha256sum] = "eb56d7e99ab9e869b6abfb2a0463015e7d7b2e8610b7b9d05285edb8e8dfaf4f"

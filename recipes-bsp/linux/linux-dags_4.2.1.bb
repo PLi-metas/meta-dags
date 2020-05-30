@@ -8,7 +8,7 @@ COMPATIBLE_MACHINE = "^(force2|force2nano|force2plus|force2plushv|force2se|optim
 
 SRCDATE = "20151022"
 
-inherit kernel machine_kernel_pr
+inherit kernel machine_kernel_pr samba_change_dialect
 
 SRC_URI[md5sum] = "48d1c96b3bedcc6a11c34eede6e36bfd"
 SRC_URI[sha256sum] = "ed11d537b1e19d59b132fd643bebc7469bf20e115bdc23e949e2ce14ae53aadc"
