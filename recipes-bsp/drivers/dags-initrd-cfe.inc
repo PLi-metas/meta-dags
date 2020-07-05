@@ -7,8 +7,6 @@ PACKAGE_ARCH := "${MACHINE}"
 
 require conf/license/license-gplv2.inc
 
-MACHINETYPE = "${MACHINE}"
-
 SRC_URI = "http://en3homeftp.net/pub/down/vmlinuz-initrd_${MACHINETYPE}_${SRCDATE}.tar.gz"
 
 S = "${WORKDIR}"
