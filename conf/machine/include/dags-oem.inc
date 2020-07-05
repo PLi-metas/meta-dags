@@ -3,7 +3,7 @@ MACHINE_FEATURES_BACKFILL_CONSIDERED += "rtc"
 
 BOX_BRAND = "dags"
 
-MACHINE_FEATURES += "3dtv alsa hdmicec switchoff textlcd ci dags"
+MACHINE_FEATURES += "alsa hdmicec switchoff textlcd ci dags"
 
 BOOTLOGO_FILENAME = "splash.bmp"
 
