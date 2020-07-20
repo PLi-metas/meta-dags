@@ -7,8 +7,6 @@ RDEPENDS_${PN} = "ncurses"
 LICENSE = "CLOSED"
 require conf/license/license-close.inc
 
-COMPATIBLE_MACHINE = "^(force4|lunix4k)$"
-
 PACKAGES = "dags-blindscan-dvbs-utils"
 
 PROVIDES += "virtual/blindscan-dvbs"
@@ -30,3 +28,5 @@ INHIBIT_PACKAGE_STRIP = "1"
 INHIBIT_PACKAGE_DEBUG_SPLIT = "1"
 do_compile[noexec] = "1"
 deltask do_populate_sysroot
+
+BLINDSCAN_BINARY = "dags_blindscan"
