@@ -3,7 +3,7 @@ MACHINE_FEATURES_BACKFILL_CONSIDERED += "rtc"
 
 BOX_BRAND = "dags"
 
-MACHINE_FEATURES += "alsa hdmicec switchoff textlcd ci dags"
+MACHINE_FEATURES += "alsa hdmicec switchoff textlcd ci dags HDMI"
 
 BOOTLOGO_FILENAME = "splash.bmp"
 
@@ -17,6 +17,7 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 MACHINE_EXTRA_RRECOMMENDS += "\
     gstreamer1.0-plugin-dvbmediasink \
     gstreamer1.0-libav \
+    ${@bb.utils.contains('MACHINE_FEATURES', 'swap', 'dags-swapcreate', '',d)} \
     "
 
 KERNEL_MODULE_AUTOLOAD += "xfs"

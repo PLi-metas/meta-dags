@@ -1,6 +1,6 @@
 require conf/machine/include/dags-oem.inc
 
-DISTRO_FEATURES_remove = "directfb gtk-directfb"
+DISTRO_FEATURES_remove += "directfb gtk-directfb"
 
 KERNEL_FILE = "oe_kernel.bin"
 ROOTFS_FILE = "rootfs.tar.bz2"
