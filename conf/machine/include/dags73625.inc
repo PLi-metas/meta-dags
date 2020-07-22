@@ -6,7 +6,7 @@ SOC_FAMILY = "bcm73625"
 
 STB_PLATFORM = "dags73625"
 
-MACHINE_FEATURES += "blindscan-tbs dvb-c"
+MACHINE_FEATURES += "blindscan-tbs dvb-c vfdsymbol"
 
 MTD_KERNEL = "mtd2"
 MTD_ROOTFS = "mtd0"
