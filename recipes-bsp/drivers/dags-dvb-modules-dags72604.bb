@@ -2,11 +2,11 @@ require dags-dvb-modules.inc
 
 COMPATIBLE_MACHINE = "^(force4|lunix4k)$"
 
-SRCDATE = "20200713"
+SRCDATE = "20200717"
 KV = "4.1.20"
 
-SRC_URI[md5sum] = "05978b566915887931df6678dc015da2"
-SRC_URI[sha256sum] = "3f33d70885f4d33e92b2f92113ca46086c47d525bbb34867ef1e87aece1b9300"
+SRC_URI[md5sum] = "dff8d9800fbc7c978bc6a0c17ce41838"
+SRC_URI[sha256sum] = "a31e45fb03ee2bb22eef8908ce06ce5c5cf303e6c0614a37f5bc6b1effd31ee9"
 
 SRC_URI = "http://en3homeftp.net/release/images/oedrivers/bcmlinuxdvb_72604-${KV}-${SRCDATE}.tar.gz"
 
