@@ -55,7 +55,7 @@ kernel_do_install_append() {
         install -m 0755 ${KERNEL_OUTPUT} ${D}/${KERNEL_IMAGEDEST}
 }
 
-pkg_postinst_kernel-image () {
+pkg_postinst_${KERNEL_PACKAGE_NAME}-image () {
         if [ -d /proc/stb ] ; then
                 dd if=/${KERNEL_IMAGEDEST}/${KERNEL_IMAGETYPE} of=/dev/mmcblk0p1
         fi
