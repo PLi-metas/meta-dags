@@ -20,7 +20,6 @@ MACHINE_EXTRA_RRECOMMENDS += "\
     ${@bb.utils.contains('MACHINE_FEATURES', 'swap', 'dags-swapcreate', '',d)} \
     "
 
-KERNEL_MODULE_AUTOLOAD += "xfs"
 
 GLIBC_EXTRA_OECONF = "--with-tls"
 DVBMEDIASINK_CONFIG = "--with-dags --with-pcm --with-eac3 --with-amr --with-wmv"
