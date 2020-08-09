@@ -3,7 +3,7 @@ require dags-dvb-modules.inc
 COMPATIBLE_MACHINE = "^(force4|lunix4k)$"
 
 SRCDATE = "20200717"
-KV = "4.1.20"
+KV = "${KERNELVERSION}"
 
 SRC_URI[md5sum] = "dff8d9800fbc7c978bc6a0c17ce41838"
 SRC_URI[sha256sum] = "a31e45fb03ee2bb22eef8908ce06ce5c5cf303e6c0614a37f5bc6b1effd31ee9"

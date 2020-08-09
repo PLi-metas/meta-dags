@@ -3,7 +3,7 @@ require dags-dvb-modules.inc
 COMPATIBLE_MACHINE = "^(force3uhd|tmtwin4k|revo4k)$"
 
 SRCDATE = "20190424"
-KV = "3.14.28"
+KV = "${KERNELVERSION}"
 
 SRC_URI[md5sum] = "a2e3bc02be5a63d4230b29e5a80d52ff"
 SRC_URI[sha256sum] = "ba7bf7ff75add7ee5a435a47ed8d1c90b7c00db836e0fa8c0fa7a487f451c14b"

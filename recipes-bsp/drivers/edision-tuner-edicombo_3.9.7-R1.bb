@@ -2,7 +2,7 @@ require edision-tuner-edicombo.inc
 
 COMPATIBLE_MACHINE = "^(iqonios100hd|iqonios300hd|iqonios300hdv2|mediabox|optimussos1|tmnano2t|tmnano|tm2t|tmtwin|tmsingle)$"
 
-KV = "3.9.7-R1"
+KV = "${KERNELVERSION}-R1"
 
 SRCDATE = "20170526"
 

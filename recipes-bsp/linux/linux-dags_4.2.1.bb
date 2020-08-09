@@ -1,6 +1,7 @@
 SUMMARY = "Linux kernel for ${MACHINE}"
 LICENSE = "GPLv2"
 SECTION = "kernel"
+LIC_FILES_CHKSUM = "file://${WORKDIR}/linux-${PV}/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
@@ -13,9 +14,7 @@ inherit kernel machine_kernel_pr samba_change_dialect
 SRC_URI[md5sum] = "48d1c96b3bedcc6a11c34eede6e36bfd"
 SRC_URI[sha256sum] = "ed11d537b1e19d59b132fd643bebc7469bf20e115bdc23e949e2ce14ae53aadc"
 
-LIC_FILES_CHKSUM = "file://${WORKDIR}/linux-${PV}/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
-
-SRC_URI += "http://en3homeftp.net/pub/src/dags-linux-${PV}-${SRCDATE}.tar.gz \
+SRC_URI = "http://en3homeftp.net/pub/src/dags-linux-${PV}-${SRCDATE}.tar.gz \
 	file://defconfig \
 	file://${OPENVISION_BASE}/meta-openvision/recipes-linux/kernel-patches/kernel-add-support-for-gcc${VISIONGCCVERSION}.patch \
 	file://0002-add-brcm-chips.patch \

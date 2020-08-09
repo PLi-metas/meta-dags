@@ -1,6 +1,8 @@
 require conf/machine/include/dags-mips.inc
 
-PREFERRED_VERSION_linux-dags = "4.2.1"
+KERNELVERSION = "4.2.1"
+
+PREFERRED_VERSION_linux-dags = "${KERNELVERSION}"
 
 SOC_FAMILY = "bcm73625"
 
@@ -13,5 +15,5 @@ MTD_ROOTFS = "mtd0"
 SPLASH1_BMP = "splash1_power.bmp"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
-    dags-dvb-modules-dags73625 \
-    "
+	dags-dvb-modules-dags73625 \
+	"

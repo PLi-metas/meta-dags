@@ -1,12 +1,13 @@
 SUMMARY = "Linux kernel for ${MACHINE}"
 LICENSE = "GPLv2"
 SECTION = "kernel"
+LIC_FILES_CHKSUM = "file://${WORKDIR}/linux-${KV}/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 COMPATIBLE_MACHINE = "^(force1|force1plus|iqonios100hd|iqonios200hd|iqonios300hd|iqonios300hdv2|mediabox|optimussos1|optimussos1plus|optimussos2|optimussos2plus|optimussos3plus|worldvisionf1|worldvisionf1plus|tm2t|tmnano|tmnano2super|tmnano2t|tmnano3t|tmtwin|tmsingle)$"
 
-KV = "3.9.7-r2"
+KV = "${KERNELVERSION}-r2"
 
 inherit kernel machine_kernel_pr samba_change_dialect
 
@@ -14,8 +15,6 @@ SRCDATE = "20141120"
 
 SRC_URI[md5sum] = "dccfbe420bbc64291ab87b0545475841"
 SRC_URI[sha256sum] = "c8c139148e099ed3ec88103f7d2dbd0420ec6156b4ac9adc4b7e6d7d955f456e"
-
-LIC_FILES_CHKSUM = "file://${WORKDIR}/linux-${KV}/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
 SRC_URI = "http://en3homeftp.net/pub/src/linux-${KV}-${SRCDATE}.tar.gz \
 	file://defconfig \

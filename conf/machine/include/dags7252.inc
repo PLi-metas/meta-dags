@@ -1,6 +1,8 @@
 require conf/machine/include/dags-arm.inc
 
-PREFERRED_VERSION_linux-dags = "3.14.28"
+KERNELVERSION = "3.14.28"
+
+PREFERRED_VERSION_linux-dags = "${KERNELVERSION}"
 
 SOC_FAMILY = "bcm7252s"
 

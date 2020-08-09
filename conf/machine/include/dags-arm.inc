@@ -29,5 +29,5 @@ IMAGE_CMD_tar_prepend = "\
 "
 
 EXTRA_IMAGEDEPENDS += "\
-    dags-initrd-cfe-${MACHINE} \
-    "
+	dags-initrd-cfe-${MACHINE} \
+	"

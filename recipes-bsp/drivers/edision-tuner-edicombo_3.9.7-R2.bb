@@ -2,7 +2,7 @@ require edision-tuner-edicombo.inc
 
 COMPATIBLE_MACHINE = "^(force1|force1plus|optimussos2plus|optimussos3plus|optimussos1plus)$"
 
-KV = "3.9.7-R2"
+KV = "${KERNELVERSION}-R2"
 
 SRCDATE = "20170526"
 

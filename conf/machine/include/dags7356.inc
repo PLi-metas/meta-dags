@@ -1,6 +1,8 @@
 require conf/machine/include/dags-mips.inc
 
-PREFERRED_VERSION_linux-dags = "3.9.7"
+KERNELVERSION = "3.9.7"
+
+PREFERRED_VERSION_linux-dags = "${KERNELVERSION}"
 
 SOC_FAMILY = "bcm7356"
 

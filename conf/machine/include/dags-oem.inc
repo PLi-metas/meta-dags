@@ -11,15 +11,14 @@ DVBPROVIDER = "kernel"
 DVBSKYPROVIDER = "kernel"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
-    dags-shutdown \
-    "
+	dags-shutdown \
+	"
 
 MACHINE_EXTRA_RRECOMMENDS += "\
-    gstreamer1.0-plugin-dvbmediasink \
-    gstreamer1.0-libav \
-    ${@bb.utils.contains('MACHINE_FEATURES', 'swap', 'dags-swapcreate', '',d)} \
-    "
-
+	gstreamer1.0-plugin-dvbmediasink \
+	gstreamer1.0-libav \
+	${@bb.utils.contains('MACHINE_FEATURES', 'swap', 'dags-swapcreate', '',d)} \
+	"
 
 GLIBC_EXTRA_OECONF = "--with-tls"
 DVBMEDIASINK_CONFIG = "--with-dags --with-pcm --with-eac3 --with-amr --with-wmv"

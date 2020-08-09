@@ -1,22 +1,20 @@
 SUMMARY = "Linux kernel for ${MACHINE}"
 LICENSE = "GPLv2"
 SECTION = "kernel"
+LIC_FILES_CHKSUM = "file://COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 COMPATIBLE_MACHINE = "^(force3uhd|force3uhdplus|tm4ksuper|tmtwin4k|lunix34k|galaxy4k|revo4k)$"
 
-KV = "3.14.28"
+KV = "${KERNELVERSION}"
 
 inherit kernel machine_kernel_pr samba_change_dialect
 
 SRC_URI[md5sum] = "3b6d3fd2257b61789eebdebac5c597b2"
 SRC_URI[sha256sum] = "eb56d7e99ab9e869b6abfb2a0463015e7d7b2e8610b7b9d05285edb8e8dfaf4f"
 
-
-LIC_FILES_CHKSUM = "file://COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
-
-SRC_URI += "http://en3homeftp.net/pub/src/linux-3.14.28.tar.xz \
+SRC_URI = "http://en3homeftp.net/pub/src/linux-3.14.28.tar.xz \
 	file://defconfig \
 	file://${OPENVISION_BASE}/meta-openvision/recipes-linux/kernel-patches/kernel-add-support-for-gcc${VISIONGCCVERSION}.patch \
 	file://date-time.patch \
@@ -46,7 +44,6 @@ KERNEL_IMAGETYPE = "zImage"
 KERNEL_OBJECT_SUFFIX = "ko"
 KERNEL_IMAGEDEST = "tmp"
 KERNEL_OUTPUT = "arch/${ARCH}/boot/${KERNEL_IMAGETYPE}"
-
 
 FILES_${KERNEL_PACKAGE_NAME}-image = "/${KERNEL_IMAGEDEST}/zImage"
 
