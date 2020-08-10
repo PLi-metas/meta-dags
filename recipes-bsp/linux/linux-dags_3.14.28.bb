@@ -7,7 +7,6 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 COMPATIBLE_MACHINE = "^(force3uhd|force3uhdplus|tm4ksuper|tmtwin4k|lunix34k|galaxy4k|revo4k)$"
 
-KV = "${KERNELVERSION}"
 
 inherit kernel machine_kernel_pr samba_change_dialect
 

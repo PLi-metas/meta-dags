@@ -3,7 +3,6 @@ require dags-dvb-modules.inc
 COMPATIBLE_MACHINE = "^(worldvisionf1|worldvisionf1plus)$"
 
 SRCDATE = "20171201"
-KV = "${KERNELVERSION}"
 
 SRC_URI[md5sum] = "842566ec81722539b7211d9c13ab39c9"
 SRC_URI[sha256sum] = "fa1bd1a9b79644c3ec4687dc83dfbb87bb1f5f68194e9baa4ec8d5527339b9f2"

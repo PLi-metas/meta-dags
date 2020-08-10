@@ -7,7 +7,6 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 COMPATIBLE_MACHINE = "^(force4|lunix4k)$"
 
-KV = "${KERNELVERSION}"
 DATETIME = "20180321"
 
 inherit kernel machine_kernel_pr samba_change_dialect
