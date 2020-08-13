@@ -12,7 +12,7 @@ PACKAGES = "dags-blindscan-dvbs-utils"
 PROVIDES += "virtual/blindscan-dvbs"
 RPROVIDES_dags-blindscan-dvbs-utils += "virtual/blindscan-dvbs"
 
-SRC_URI = "file://dags_blindscan"
+SRC_URI = "file://${BLINDSCAN_BINARY}"
 
 S = "${WORKDIR}/"
 
@@ -20,7 +20,7 @@ FILES_dags-blindscan-dvbs-utils = "${bindir}/*_blindscan"
 
 do_install() {
     install -d ${D}${bindir}/
-    install -m 0755 "${S}/dags_blindscan" "${D}${bindir}"
+    install -m 0755 "${S}/${BLINDSCAN_BINARY}" "${D}${bindir}"
 }
 
 do_prepare_recipe_sysroot[noexec] = "1"
