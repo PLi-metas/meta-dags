@@ -30,3 +30,5 @@ PREFERRED_PROVIDER_virtual/blindscan-dvbs = "dags-blindscan-utils"
 require conf/machine/include/soc-family.inc
 
 BLINDSCAN_BINARY = "dags_blindscan"
+
+RCNAME ?= "optimuss1"
