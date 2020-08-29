@@ -12,9 +12,6 @@ DVBSKYPROVIDER = "kernel"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 	dags-shutdown \
-	"
-
-MACHINE_EXTRA_RRECOMMENDS += "\
 	gstreamer1.0-plugin-dvbmediasink \
 	gstreamer1.0-libav \
 	${@bb.utils.contains('MACHINE_FEATURES', 'swap', 'dags-swapcreate', '',d)} \
@@ -32,3 +29,5 @@ require conf/machine/include/soc-family.inc
 BLINDSCAN_BINARY = "dags_blindscan"
 
 RCNAME ?= "optimuss1"
+
+PREFERRED_VERSION_linux-dags = "${KERNELVERSION}"
