@@ -14,7 +14,7 @@ RPROVIDES_dags-blindscan-dvbs-utils += "virtual/blindscan-dvbs"
 
 SRC_URI = "file://${BLINDSCAN_BINARY}"
 
-S = "${WORKDIR}/"
+S = "${WORKDIR}"
 
 FILES_dags-blindscan-dvbs-utils = "${bindir}/*_blindscan"
 
