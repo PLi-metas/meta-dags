@@ -14,8 +14,8 @@ require conf/machine/include/tune-cortexa15.inc
 
 IMAGE_CMD_tar_prepend = "\
 	mkdir -p ${DEPLOY_DIR_IMAGE}/${IMAGEDIR}; \
-	cp ${DEPLOY_DIR_IMAGE}/${MACHINE}_initrd_run.bin ${DEPLOY_DIR_IMAGE}/${IMAGEDIR}/initrd_run.bin; \
-	cp ${DEPLOY_DIR_IMAGE}/zImage ${DEPLOY_DIR_IMAGE}/${IMAGEDIR}/${KERNEL_FILE}; \
+	cp -f ${DEPLOY_DIR_IMAGE}/${MACHINE}_initrd_run.bin ${DEPLOY_DIR_IMAGE}/${IMAGEDIR}/initrd_run.bin; \
+	cp -f ${DEPLOY_DIR_IMAGE}/zImage ${DEPLOY_DIR_IMAGE}/${IMAGEDIR}/${KERNEL_FILE}; \
 	echo ${IMAGE_NAME} > ${DEPLOY_DIR_IMAGE}/${IMAGEDIR}/imageversion; \
 	cd ${IMAGE_ROOTFS}; \
 	tar -cvf ${DEPLOY_DIR_IMAGE}/rootfs.tar -C ${IMAGE_ROOTFS} .; \
