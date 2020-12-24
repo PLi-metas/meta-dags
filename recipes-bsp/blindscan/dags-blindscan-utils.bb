@@ -1,11 +1,12 @@
 SUMMARY = "Utilities for transponder & dvb-s blindscan"
 SECTION = "base"
 PRIORITY = "optional"
+LICENSE = "CLOSED"
+require conf/license/license-close.inc
 
 RDEPENDS_${PN} = "ncurses"
 
-LICENSE = "CLOSED"
-require conf/license/license-close.inc
+COMPATIBLE_MACHINE = "^(force4|lunix4k)$"
 
 PACKAGES = "dags-blindscan-dvbs-utils"
 
