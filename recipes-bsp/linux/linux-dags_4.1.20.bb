@@ -7,14 +7,14 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 COMPATIBLE_MACHINE = "^(force4|lunix4k)$"
 
-DATETIME = "20180321"
+SRCDATE = "20180321"
 
 inherit kernel machine_kernel_pr samba_change_dialect
 
 SRC_URI[md5sum] = "710b7af46d7ac1c78e3ef683c5c0a6ad"
 SRC_URI[sha256sum] = "1bb6b4f0d559885b3bd5f18c66a50a8ff39a284a81ad4da16188d08b9461ec55"
 
-SRC_URI = "http://en3homeftp.net/pub/down/linux-${KV}-${DATETIME}.tar.xz \
+SRC_URI = "http://en3homeftp.net/pub/down/linux-${KV}-${SRCDATE}.tar.xz \
 	file://defconfig \
 	file://${OPENVISION_BASE}/meta-openvision/recipes-linux/kernel-patches/kernel-add-support-for-gcc${VISIONGCCVERSION}.patch \
 	file://0002-log2-give-up-on-gcc-constant-optimizations.patch \

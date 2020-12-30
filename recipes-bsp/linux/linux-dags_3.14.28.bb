@@ -7,13 +7,12 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 COMPATIBLE_MACHINE = "^(force3uhd|force3uhdplus|tm4ksuper|tmtwin4k|lunix34k|galaxy4k|revo4k)$"
 
-
 inherit kernel machine_kernel_pr samba_change_dialect
 
 SRC_URI[md5sum] = "3b6d3fd2257b61789eebdebac5c597b2"
 SRC_URI[sha256sum] = "eb56d7e99ab9e869b6abfb2a0463015e7d7b2e8610b7b9d05285edb8e8dfaf4f"
 
-SRC_URI = "http://en3homeftp.net/pub/src/linux-3.14.28.tar.xz \
+SRC_URI = "http://en3homeftp.net/pub/src/linux-${PV}.tar.xz \
 	file://defconfig \
 	file://${OPENVISION_BASE}/meta-openvision/recipes-linux/kernel-patches/kernel-add-support-for-gcc${VISIONGCCVERSION}.patch \
 	file://date-time.patch \
@@ -61,8 +60,6 @@ pkg_postinst_${KERNEL_PACKAGE_NAME}-image () {
 
 pkg_postrm_${KERNEL_PACKAGE_NAME}-image () {
 }
-
-FILESEXTRAPATHS_prepend := "${THISDIR}/linux-dags-${KV}:"
 
 do_rm_work() {
 }
