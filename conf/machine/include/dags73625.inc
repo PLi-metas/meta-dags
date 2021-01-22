@@ -13,5 +13,5 @@ MTD_ROOTFS = "mtd0"
 SPLASH1_BMP = "splash1_power.bmp"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
-	dags-dvb-modules-dags73625 \
+	dags-dvb-modules-${STB_PLATFORM} \
 	"

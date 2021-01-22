@@ -19,7 +19,8 @@ GLIBC_EXTRA_OECONF = "--with-tls"
 DVBMEDIASINK_CONFIG = "--with-dags --with-pcm --with-eac3 --with-amr --with-wmv"
 
 PREFERRED_PROVIDER_virtual/kernel = "linux-dags"
-
+PREFERRED_PROVIDER_virtual/egl = "v3d-libgles-${STB_PLATFORM}" 
+PREFERRED_PROVIDER_virtual/libgles2 = "v3d-libgles-${STB_PLATFORM}"
 PREFERRED_PROVIDER_virtual/blindscan-dvbs = "dags-blindscan-utils"
 
 require conf/machine/include/soc-family.inc

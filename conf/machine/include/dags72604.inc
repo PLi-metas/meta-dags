@@ -6,7 +6,7 @@ SOC_FAMILY = "bcm72604"
 
 STB_PLATFORM = "dags72604"
 
-MACHINE_FEATURES += "emmc mmc dvb-c blindscan-dvbs swap"
+MACHINE_FEATURES += "emmc mmc dvb-c blindscan-dvbs swap v3d"
 
 DVBMEDIASINK_CONFIG = "--with-dags --with-pcm --with-eac3 --with-amr --with-wmv --with-h265 --with-vb9"
 
@@ -15,5 +15,6 @@ MTD_ROOTFS = "mmcblk0p4"
 SPLASH1_BMP = "splash1_power.bmp"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
-	dags-dvb-modules-dags72604 \
+	dags-dvb-modules-${STB_PLATFORM} \
+	v3d-libgles-${STB_PLATFORM} \
 	"
