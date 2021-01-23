@@ -17,4 +17,5 @@ SPLASH1_BMP = "splash1_power.bmp"
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 	dags-dvb-modules-${STB_PLATFORM} \
 	dags-swapcreate \
+	platform-util-${STB_PLATFORM} \
 	"

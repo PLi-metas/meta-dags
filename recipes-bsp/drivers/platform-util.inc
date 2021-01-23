@@ -1,19 +1,17 @@
-SUMMARY = "Platform Util drivers for ${MACHINE}"
+SUMMARY = "Platform Util drivers for ${STB_PLATFORM}"
 SECTION = "base"
 PRIORITY = "required"
 LICENSE = "CLOSED"
 require conf/license/license-close.inc
 
-PACKAGE_ARCH = "${MACHINE}"
-
 PV = "17.1"
 
 SRC_URI = "\
-	http://en3homeftp.net/pub/down/platform-util-${MACHINE}.tar.gz \
+	http://en3homeftp.net/pub/down/platform-util-${STB_PLATFORM}.tar.gz \
 	file://${INITSCRIPT_NAME}.sysvinit \
 	"
 
-S = "${WORKDIR}/platform-util-${MACHINE}"
+S = "${WORKDIR}/platform-util-${STB_PLATFORM}"
 
 do_install() {
 	install -d ${D}${bindir}
