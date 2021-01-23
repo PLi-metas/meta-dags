@@ -12,7 +12,6 @@ DVBSKYPROVIDER = "kernel"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 	dags-shutdown \
-	${@bb.utils.contains('MACHINE_FEATURES', 'swap', 'dags-swapcreate', '',d)} \
 	"
 
 GLIBC_EXTRA_OECONF = "--with-tls"
