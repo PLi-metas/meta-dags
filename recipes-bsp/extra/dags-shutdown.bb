@@ -1,6 +1,5 @@
 require conf/license/license-gplv2.inc
 
-
 SRC_URI = " \
     file://turnoff_power \
     file://dags-shutdown.sh "
