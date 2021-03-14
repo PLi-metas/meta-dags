@@ -26,9 +26,10 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 	dags-bootoptions-${MACHINE} \
 	dags-buildimage \
 	deepsleep-${SOC_FAMILY} \
+	dags-blindscan-utils-${SOC_FAMILY} \
 	"
 
-MACHINE_FEATURES += "emmc mmc 7segment hisi mali AV_JACK multitranscoding fastboot"
+MACHINE_FEATURES += "emmc mmc 7segment hisi mali AV_JACK multitranscoding fastboot blindscan-dvbs"
 
 MACHINE_FEATURES_remove += "ci"
 
@@ -40,6 +41,7 @@ TARGET_ARCH = "arm"
 DEFAULTTUNE = "cortexa15hf-neon-vfpv4"
 
 PREFERRED_PROVIDER_virtual/enigma2-mediaservice = "enigma2-plugin-systemplugins-servicehisilicon"
+PREFERRED_PROVIDER_virtual/blindscan-dvbs = "dags-blindscan-utils-${SOC_FAMILY}"
 
 require conf/machine/include/tune-cortexa15.inc
 
