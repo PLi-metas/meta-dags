@@ -3,6 +3,8 @@ SECTION = "base"
 PRIORITY = "optional"
 LICENSE = "CLOSED"
 
+COMPATIBLE_MACHINE = "^(dual)$"
+
 PACKAGES = "dags-blindscan-utils-${SOC_FAMILY}"
 
 PROVIDES += "virtual/blindscan-dvbs"
